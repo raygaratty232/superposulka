@@ -16,6 +16,7 @@ background: linear-gradient(180deg, #FFFFFF 70%, #F1F1F1 100%);/* W3C */
 	max-width: 960px;
 	margin: auto;
 	overflow: hidden;
+	display: flex;
 }
 .top-middle{
 	display: none;
@@ -26,7 +27,6 @@ background: linear-gradient(180deg, #FFFFFF 70%, #F1F1F1 100%);/* W3C */
 .logo{
 	max-width: 445px;
 	min-height: 110px;
-	float: left;
 	margin-top: 6%;
 }
 .logo h1{
@@ -44,9 +44,8 @@ background: linear-gradient(180deg, #FFFFFF 70%, #F1F1F1 100%);/* W3C */
 	float: left;
 }
 .head-info{
-	max-width: 460px;
+	width: 56%;
 	min-height: 134px;
-	float: right;
 	overflow: hidden;
 }
 .enter{
@@ -604,6 +603,11 @@ background: linear-gradient(180deg, #FFFFFF 70%, #F1F1F1 100%);/* W3C */
 .li-calk{
 	display: none;
 }
+@media only screen and (max-width: 858px){
+	.right-block {
+    width: 100%;
+	}
+}
 @media only screen and (max-width: 824px){
 	.carousel:before{
 		display: none;
@@ -770,6 +774,7 @@ background: linear-gradient(180deg, #FFFFFF 70%, #F1F1F1 100%);/* W3C */
 	}
 	.logo{
 		margin: 0;
+		float: left;
 	}
 	.logo-block{
 		max-width: 445px;
@@ -806,6 +811,7 @@ background: linear-gradient(180deg, #FFFFFF 70%, #F1F1F1 100%);/* W3C */
 @media only screen and (max-width: 764px){
 	.nav li {
     padding-left: 5%;
+	}
 }
 @media only screen and (max-width: 693px){
 	.drop-menu-middle{
@@ -1038,6 +1044,7 @@ background: linear-gradient(180deg, #FFFFFF 70%, #F1F1F1 100%);/* W3C */
 /*-------------media-end----------------------------*/
 	
 /*--------------contacts---------------------------*/
+
 .contacts{
 	max-width: 960px;
 	min-height: 500px;
@@ -1064,8 +1071,8 @@ background: linear-gradient(180deg, #FFFFFF 70%, #F1F1F1 100%);/* W3C */
 .contacts-right{
 	float: left;
     margin-top: 110px;
-    margin-left: 50px;
-    width: 430px;
+    margin-left: 1%;
+    max-width: 430px;
 }
 .contacts-right form{
     max-width: 425px;
@@ -1118,6 +1125,31 @@ background: linear-gradient(180deg, #FFFFFF 70%, #F1F1F1 100%);/* W3C */
     margin-top: 5%;
     margin-right: 13%;
 }
+@media only screen and (max-width: 976px){
+	.fix-block{
+		display: none;
+	}
+	.contacts-info-left,
+	.contacts-info-right {
+    	float: none;
+	}
+	.contacts-left {
+	    width: 37%;
+	    margin-left: 2%;
+	}
+}
+@media only screen and (max-width: 701px){
+		.contacts-left{
+			width: 100%;
+		}
+		.contacts-info-left,
+		.contacts-info-right{
+			float: left;
+		}
+		.wrapper-info{
+			overflow: hidden;
+		}
+	}
 /*--------------contacts-end---------------------------*/
 /*----------------------faq----------------------------*/
 .faq{
