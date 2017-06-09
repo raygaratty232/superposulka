@@ -1281,6 +1281,9 @@ background: linear-gradient(180deg, #FFFFFF 70%, #F1F1F1 100%);/* W3C */
 input:focus + button {
     color: #000;
 }
+.top-left-form p:nth-child(2){
+	margin-left: 18%;
+}
 .middle-order{
 	min-height: 100px;
 	max-width: 960px;
@@ -1394,11 +1397,12 @@ input:focus + button {
 }
 .price{
 	max-width: 485px;
-	margin: auto;
-	display: flex;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
 }
 .price-item{
-	flex-basis: 150px;
+	flex-basis: 120px;
 }
 .price-item h2{
 	font-size: 12px;
@@ -1478,10 +1482,10 @@ input:focus + button {
 	}
 	.order-form input:last-child{
 		width: 200px;
-		margin-left: 33%;
+		margin-left: 32%;
 	}
 	input.cena{
-		margin-left: 24%;
+		margin-left: 25%;
 	}
 	.top-right-form{
 		float: none;
@@ -1534,9 +1538,6 @@ input:focus + button {
 	.top-left-form p:first-child{
 		margin-left: 6.5%;
 	}
-	.cash{
-		
-	}
 }
 @media only screen and (max-width: 695px){
 	.middle-order input{
@@ -1562,9 +1563,24 @@ input:focus + button {
 		max-width: 100px;
 	}
 }
+@media only screen and (max-width: 473px){
+	.middle-order input {
+    	max-width: 80px;
+	}
+}
+@media only screen and (max-width: 463px){
+	.total-left{
+		width: 36%;
+	}
+	.price-item {
+		flex-basis: 100px;
+		padding: 2% 13%;
+	}
+}
 @media only screen and (max-width: 420px){
 	.order-form span{
 		display: block;
+		margin-bottom: 2%;
 	}
 	.order-form select{
 		margin: 0;
