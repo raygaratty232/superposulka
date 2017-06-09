@@ -1582,6 +1582,19 @@ input:focus + button {
 		display: block;
 		margin-bottom: 2%;
 	}
+	.kg span{
+		display: block;
+		margin-bottom: 2%;
+	}
+	.top-left-form input{
+		margin: 0px;
+		padding: 0px;
+	}
+	.top-left-form p:first-child{
+		margin: 0px;
+		padding: 0px;
+		padding: 2%;
+	}
 	.order-form select{
 		margin: 0;
 		padding: 0;
@@ -1593,5 +1606,28 @@ input:focus + button {
 	.order-form input{
 		margin: 0;
 		padding: 0;
+	}
+}
+@media only screen and (max-width: 375px){
+	.middle-order p{
+		float: none;
+		padding: 0px;
+		margin-bottom: 3%;
+	}
+	.middle-order h2{
+		text-align: left;
+	}
+	.price-item{
+		    flex-basis: 85px;
+	}
+	.totals{
+		min-height: 165px;
+	}
+	.total-left {
+		width: 65%;
+		margin-left: 18%;
+	}
+	.total-button{
+		margin-left: 20%;
 	}
 }
