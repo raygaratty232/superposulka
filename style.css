@@ -661,23 +661,22 @@ background: linear-gradient(180deg, #FFFFFF 70%, #F1F1F1 100%);/* W3C */
 	#vk_groups{
 		display: none;
 	}
-	.nav li:nth-child(3){
-		display: none;
+	.li-block{
+		display: block;
 	}
-	.nav li:nth-child(4){
-		display: none;
-	}
-	.nav li:nth-child(6){
-		display: none;
-	}
+	
 	.nav li{
 		padding-left: 6%;
+	}
+	.li-none{
+		display: none;
 	}
 	.drop{
 		display: block;
 	    padding: 0;
 	    width: 9%;
 	    text-align: center;
+		float: right;
 	}
 	.drop a{
 		text-decoration: none;
@@ -717,6 +716,9 @@ background: linear-gradient(180deg, #FFFFFF 70%, #F1F1F1 100%);/* W3C */
 	}
 	.nav a:after{
 		display: none;
+	}
+	nav li:nth-child(9){
+		float: right;
 	}
 	.order, .all-shop{
 		display: none;
@@ -859,6 +861,7 @@ background: linear-gradient(180deg, #FFFFFF 70%, #F1F1F1 100%);/* W3C */
 	.drop-menu-middle li{
 		float: none;
 		text-align: left;
+		display: block;
 	}
 	.li-none{
 		display: none;
@@ -1138,14 +1141,17 @@ background: linear-gradient(180deg, #FFFFFF 70%, #F1F1F1 100%);/* W3C */
 		.contacts-left{
 			width: 100%;
 		}
-		.contacts-info-left,
 		.contacts-info-right{
+			float: left;
+		}
+		.contacts-info-left{
 			float: left;
 		}
 		.wrapper-info{
 			overflow: hidden;
 		}
 	}
+	
 /*--------------contacts-end---------------------------*/
 /*----------------------faq----------------------------*/
 .faq{
@@ -1505,6 +1511,7 @@ input:focus + button {
 	}
 	.kg{
 		display: block;
+		margin: 0px;
 	}
 	.form-none{
 		display: none;
@@ -1536,7 +1543,14 @@ input:focus + button {
 		padding-left: 0px;
 	}
 	.top-left-form p:first-child{
-		margin-left: 6.5%;
+		margin: 0px;
+		margin-left: 2%;
+	}
+	.top-left-form input{
+		margin-left: 26%;
+	}
+	.top-left-form input{
+		width: 138px;
 	}
 }
 @media only screen and (max-width: 695px){
@@ -1608,6 +1622,12 @@ input:focus + button {
 		padding: 0;
 	}
 }
+@media only screen and (max-width: 404px){
+	.middle-order p{
+		float: none;
+		padding: 0px;
+		margin-bottom: 3%;
+}
 @media only screen and (max-width: 375px){
 	.middle-order p{
 		float: none;
@@ -1630,4 +1650,93 @@ input:focus + button {
 	.total-button{
 		margin-left: 20%;
 	}
+	.kg span{
+		display: block;
+		margin-bottom: 2%;
+	}
+}
+}
+.typo-h1{
+	max-width: 960px;
+	min-height: 135px;
+	margin: auto;
+}
+.typo-h1 h1{
+	padding-top: 5%;
+	margin-left: 2%;
+}
+.typo-wrapper{
+	max-width: 960opx;
+	min-height: 1000px;
+	margin: auto;
+}
+.typo_p{
+	max-width: 960px;
+	min-height: 135px;
+	margin: auto;
+}
+.typo_p p{
+	font-size: 12px;
+	line-height: 15px;
+	margin-left: 2%;
+}
+.typo_img{
+	max-width: 960px;
+	min-height: 280px;
+	margin: auto;
+}
+.table{
+	max-width: 960px;
+	min-height: 325px;
+	margin: auto;
+	
+}
+.table table{
+	max-width: 470px;
+	min-height: 200px;
+	margin: auto;
+	border-top: 3px solid #ffcc00;
+	border: 1px solid #ebebeb;
+}
+.table td{
+	width: 500px;
+	height: 40px;
+	text-align: center;	
+	border: 1px solid #ebebeb;
+	line-height: 40px;
+	font-size: 12px;
+	font-family: Arial;
+}
+.table th{
+	width: 100px;
+	height: 40px;
+	border-top: 3px solid #ffcc00;
+	border: 1px solid #ebebeb;
+	font-weight: bold;
+	font-size: 13px;
+	line-height: 40px;
+}
+.clauses{
+	max-width: 960px;
+	min-height: 200px;
+	margin: auto
+}
+.clauses li{
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	padding-top: 3%;
+}
+.t-img{
+	width: 306px;
+	height: 200px;
+	margin: auto;
+}
+.t-img p{
+	text-align: center;
+	font-size: 12px;
+	color: #9b9b9b;
+	margin-top: 1%;
+}
+.clauses ul{
+	margin-left: 5%;
 }
